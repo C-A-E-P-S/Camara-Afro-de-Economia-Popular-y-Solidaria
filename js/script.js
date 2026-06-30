@@ -1,39 +1,44 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const navLinks = document.querySelectorAll('nav a[data-tab]');
-    const tabPanels = document.querySelectorAll('.tab-panel');
-    const dropdown = document.querySelector('.dropdown');
-    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const navLinks = document.querySelectorAll('.nav-links a[data-tab]');
+    const actionButtons = document.querySelectorAll('button[data-tab]');
 
-    const showTab = (tabId) => {
-        tabPanels.forEach((panel) => {
+    const showTab = (tabId, anchorId) => {
+        document.querySelectorAll('.tab-panel').forEach((panel) => {
             panel.classList.toggle('active', panel.id === tabId);
         });
+
+        document.querySelectorAll('.nav-links a').forEach((a) => {
+            a.classList.remove('active');
+        });
+
+        navLinks.forEach((a) => {
+            if (a.dataset.tab === tabId && a.dataset.anchor === anchorId) {
+                a.classList.add('active');
+            }
+        });
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        if (anchorId) {
+            setTimeout(() => {
+                const target = document.getElementById(anchorId);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
+        }
     };
 
     navLinks.forEach((link) => {
-        link.addEventListener('click', (event) => {
-            event.preventDefault();
-            showTab(link.dataset.tab);
-            dropdown.classList.remove('open');
-
-            const target = document.querySelector(link.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth' });
-            }
+        link.addEventListener('click', () => {
+            showTab(link.dataset.tab, link.dataset.anchor);
         });
     });
 
-    // Soporte táctil: en celulares no existe ":hover", así que el menú
-    // también se abre/cierra con un toque sobre el botón.
-    dropdownToggle.addEventListener('click', (event) => {
-        event.stopPropagation();
-        dropdown.classList.toggle('open');
-    });
-
-    document.addEventListener('click', (event) => {
-        if (!dropdown.contains(event.target)) {
-            dropdown.classList.remove('open');
-        }
+    actionButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            showTab(btn.dataset.tab, btn.dataset.anchor);
+        });
     });
 
     showTab('tab-inicio');
