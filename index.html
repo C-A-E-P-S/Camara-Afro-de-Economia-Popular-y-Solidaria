@@ -1,54 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Proyecto Andrea - Fundación Cámara Afro de Economía Popular y Solidaria.">
-    <title>Fundación Cámara Afro de Economía Popular y Solidaria</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Proyecto Andrea - Fundación Cámara Afro de Economía Popular y Solidaria. Emprendimiento, inclusión y desarrollo sostenible afrodescendiente en Ecuador.">
+<title>Fundación Cámara Afro de Economía Popular y Solidaria</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="logo-group">
-            <img src="images/camara_afro.png" alt="Cámara Afro" class="logo">
-            <img src="images/logo_CA.png" alt="Logo CA" class="logo logo-secondary">
-        </div>
-        <nav>
-            <div class="dropdown">
-                <button class="dropdown-toggle">Contenido</button>
-                <div class="dropdown-menu">
-                    <div class="dropdown-menu-inner">
-                        <a href="#content" data-tab="tab-inicio">Inicio</a>
-                        <a href="#mision-vision" data-tab="tab-inicio">Misión y Visión</a>
-                        <a href="#servicios" data-tab="tab-inicio">Servicios Ofrecidos</a>
-                        <a href="#historia" data-tab="tab-historia">Historia</a> 
-                        <a href="#sobre-nosotros" data-tab="tab-sobre-nosotros">Sobre Nosotros</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div id="tab-inicio" class="tab-panel">
-        <section id="content">
-            <div class="hero">
-                <p class="hero-text"><strong>Impulsamos el emprendimiento afrodescendiente fortaleciendo nuestras raíces culturales para generar desarrollo económico, inclusión y comunidades más unidas y sostenibles.</strong></p>
-                <div class="hero-image-wrapper">
-                    <img src="images/Flayer_1.jpg" alt="Flayer Cámara Afro" class="hero-image">
+
+<nav class="main-nav">
+    <div class="logo-group">
+        <img src="images/camara_afro.png" alt="Cámara Afro" class="logo">
+        <img src="images/logo_CA.png" alt="Logo CA" class="logo logo-secondary">
+    </div>
+    <div class="nav-links">
+        <a class="active" data-tab="tab-inicio">Inicio</a>
+        <a data-tab="tab-inicio" data-anchor="mision-vision">Misión y Visión</a>
+        <a data-tab="tab-inicio" data-anchor="servicios">Servicios</a>
+        <a data-tab="tab-historia">Historia</a>
+        <a data-tab="tab-sobre-nosotros">Sobre Nosotros</a>
+        <a data-tab="tab-galeria">Galería</a>
+    </div>
+</nav>
+
+<main>
+
+    <!-- INICIO -->
+    <div id="tab-inicio" class="tab-panel active">
+
+        <section id="content" class="hero-section">
+            <img src="images/Flayer_1.jpg" alt="Flayer Cámara Afro" class="hero-img">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-text-box">
+                    <h1>Impulsando el desarrollo de las <em>comunidades afrodescendientes</em></h1>
+                    <div class="hero-accent-line"></div>
+                    <p>Promovemos el emprendimiento, la inclusión económica y el desarrollo sostenible para construir oportunidades y fortalecer nuestras comunidades.</p>
+                    <button class="btn-hero" data-tab="tab-inicio" data-anchor="mision-vision">CONÓCENOS MÁS →</button>
                 </div>
             </div>
         </section>
 
-        <section id="mision-vision" class="full-page-section">
-            <div class="mision-vision">
-                <div class="mision-vision-col">
-                    <h2>Misión</h2>
-                    <p>Crear vínculos entre profesionales, empresarios y emprendedores con el fin de logara el surgimiento y fortalecimiento de nuevas empresas. Al mismo tiempo que impulsa la investigación en todos los campos que puedan ser de aporte científico y técnico; con base en ello realizar labores de desarrollo industrial y cultural, en las comunidades afrocolombianas.</p>
+        <section id="mision-vision" class="conocenos-section">
+            <div class="section-header">
+                <div class="eyebrow">CONÓCENOS MÁS</div>
+                <h2>Todo sobre la Cámara Afro EPS</h2>
+                <div class="section-accent"></div>
+            </div>
+            <div class="mv-card">
+                <h3><svg viewBox="0 0 24 24" class="mv-card-icon eye"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>Misión y Visión</h3>
+                <div class="mv-grid">
+                    <div class="mv-col">
+                        <h4><svg viewBox="0 0 24 24" class="mv-col-icon target"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5" fill="#fff"/><circle cx="12" cy="12" r="2"/></svg>Misión</h4>
+                        <p>Crear vínculos entre profesionales, empresarios y emprendedores con el fin de lograr el surgimiento y fortalecimiento de nuevas empresas. Al mismo tiempo impulsar la investigación en todos los campos de aporte científico y técnico, realizando labores de desarrollo industrial y cultural en las comunidades afrodescendientes.</p>
+                    </div>
+                    <div class="mv-col">
+                        <h4><svg viewBox="0 0 24 24" class="mv-col-icon layers"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Visión</h4>
+                        <p>Ser la organización empresarial líder y el referente principal en el desarrollo económico de la comunidad afrodescendiente, promoviendo la inclusión financiera, el comercio justo y el fortalecimiento de emprendimientos sostenibles que generen un impacto positivo en la sociedad y la economía nacional.</p>
+                    </div>
                 </div>
-                <div class="mision-vision-col">
-                    <h2>Visión</h2>
-                    <p>Ser la organización empresarial líder y el referente principal en el desarrollo económico de la comunidad afrodescendiente, promoviendo la inclusión financiera, el comercio justo y el fortalecimiento de emprendimiento sostenibles que generen un impacto positivo en la sociedad y la economía nacional.</p>
-                </div>
+            </div>
+        </section>
+
+        <section id="quienes-somos" class="quienes-somos-section">
+            <div class="qs-left">
+                <div class="eyebrow">SOBRE NOSOTROS</div>
+                <h2>¿Quiénes somos?</h2>
+                <div class="section-accent qs-accent"></div>
+                <p>La Cámara Afro de Economía Popular y Solidaria es una organización comprometida con el fortalecimiento económico, social, cultural y productivo de la población afrodescendiente, fundada el 14 de agosto de 2017 en Guayaquil, Ecuador.</p>
+                <p>Trabajamos para generar oportunidades de crecimiento sostenible a través del emprendimiento, la asociatividad, la capacitación y la articulación con diferentes actores estratégicos.</p>
+                <button class="btn-outline" data-tab="tab-sobre-nosotros" data-anchor="sobre-nosotros">LEER MÁS</button>
+            </div>
+            <div class="qs-photos">
+                <img src="images/Imagen_CA.jpeg" alt="Cámara Afro">
+                <img src="images/Imagen3_CA.jpeg" alt="Cámara Afro">
+                <img src="images/Imagen4_CA.jpeg" alt="Cámara Afro">
             </div>
         </section>
 
@@ -79,29 +107,30 @@
                 </div>
             </div>
         </section>
-        </div>
 
-        <div id="tab-historia" class="tab-panel">
+    </div>
+
+    <!-- HISTORIA -->
+    <div id="tab-historia" class="tab-panel">
         <div id="historia" class="historia-banner">
             <h2>"Historia"</h2>
         </div>
         <section class="full-page-section">
             <div class="historia-contenido">
-                <p>La Cámara Afro de Economía Popular y Solidaria (CAEPS) nació de las necesidades de estructura y visibilizar los emprendimientos de la población afrodescendiente urbana en el Ecuador, rompiendo con el mito histórico de que las comunidades afroecuatorianas pertenecían exclusivamente al ámbito rural. La Cámara se construyó en 2017 formalmente en Guayaquil, Ecuador, agrupando inicialmente a 14 unidades económicas y colectivas de autoempleo dedicados al comercio minorista, la artesanía y la preparación de alimentos.</p>
+                <p>La Cámara Afro de Economía Popular y Solidaria (CAEPS) nació de las necesidades de estructura y visibilizar los emprendimientos de la población afrodescendiente urbana en el Ecuador, rompiendo con el mito histórico de que las comunidades afroecuatorianas pertenecían exclusivamente al ámbito rural. La Cámara se constituyó formalmente en 2017 en Guayaquil, Ecuador, agrupando inicialmente a 14 unidades económicas y colectivas de autoempleo dedicados al comercio minorista, la artesanía y la preparación de alimentos.</p>
                 <p>Es una organización orientada al fortalecimiento económico, social y productivo de la población afrodescendiente, mediante la promoción del emprendimiento, la asociatividad y el desarrollo sostenible. La institución inició sus actividades el 14 de agosto de 2017, constituyéndose como un espacio de articulación entre emprendedores, productores, comerciantes y organizaciones comprometidas con el progreso de las comunidades afrodescendientes.</p>
                 <p>Desde su creación, la Cámara ha trabajado en la generación de oportunidades para sus asociados, impulsando iniciativas de capacitación, asistencia técnica, acceso a mercados, fortalecimiento empresarial y promoción de la economía popular y solidaria. Asimismo, ha fomentado alianzas estratégicas con instituciones públicas, privadas y organismos de cooperación para contribuir al desarrollo económico inclusivo y la reducción de brechas sociales.</p>
                 <p>La organización busca visibilizar el aporte de la población afrodescendiente al desarrollo del país, promoviendo la participación activa de sus miembros en actividades productivas, comerciales, culturales y de innovación. A través de sus programas y proyectos, la Cámara fortalece capacidades locales, impulsa la creación de emprendimientos sostenibles y promueve principios de equidad, solidaridad y desarrollo comunitario.</p>
             </div>
         </section>
-        </div>
+    </div>
 
-        <div id="tab-sobre-nosotros" class="tab-panel">
+    <!-- SOBRE NOSOTROS -->
+    <div id="tab-sobre-nosotros" class="tab-panel">
         <div id="sobre-nosotros" class="sobre-nosotros-banner">
-            <div class="sobre-nosotros-image-wrapper">
-                <img src="images/Imagen4_CA.jpeg" alt="Cámara Afro" class="sobre-nosotros-image">
-            </div>
             <h2>Sobre Nosotros</h2>
         </div>
+
         <section id="actualidad">
             <div class="historia-contenido">
                 <h2>¿Actualidad de CAEPS?</h2>
@@ -112,8 +141,55 @@
                 <img src="images/Imagen5_CA.jpeg" alt="Cámara Afro" class="actualidad-imagen">
             </div>
         </section>
+
+        <section id="origen-diferencia" class="origen-section">
+            <div class="section-header">
+                <h2><svg viewBox="0 0 24 24" class="origen-icon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.9 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg>¿De dónde venimos y qué nos diferencia?</h2>
+            </div>
+            <div class="origen-grid">
+                <div class="origen-card">
+                    <h3><svg viewBox="0 0 24 24" class="origen-card-icon pin"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Nuestro origen</h3>
+                    <p>Nacimos en Guayaquil en 2017 para visibilizar los emprendimientos afrodescendientes urbanos, rompiendo con el mito de que estas comunidades pertenecían solo al ámbito rural. Iniciamos con 14 unidades económicas dedicadas al comercio minorista, artesanía y preparación de alimentos.</p>
+                </div>
+                <div class="origen-card">
+                    <h3><svg viewBox="0 0 24 24" class="origen-card-icon bulb"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg>¿Qué nos diferencia?</h3>
+                    <p>Somos la única organización de cámara empresarial enfocada exclusivamente en la economía popular y solidaria afrodescendiente del Ecuador. Articulamos emprendimiento, cultura e identidad como ejes inseparables del desarrollo económico comunitario.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- GALERÍA -->
+    <div id="tab-galeria" class="tab-panel">
+        <div class="galeria-banner">
+            <h2>Galería</h2>
         </div>
-    </main>
-    <script src="js/script.js"></script>
+        <section class="full-page-section">
+            <div class="galeria-grid">
+                <div class="galeria-item">
+                    <img src="images/Imagen_CA.jpeg" alt="Cámara Afro">
+                </div>
+                <div class="galeria-item">
+                    <img src="images/Imagen2_CA.jpeg" alt="Cámara Afro">
+                </div>
+                <div class="galeria-item">
+                    <img src="images/Imagen3_CA.jpeg" alt="Cámara Afro">
+                </div>
+                <div class="galeria-item">
+                    <img src="images/Imagen4_CA.jpeg" alt="Cámara Afro">
+                </div>
+                <div class="galeria-item">
+                    <img src="images/Imagen5_CA.jpeg" alt="Cámara Afro">
+                </div>
+                <div class="galeria-item">
+                    <img src="images/ImagenH_CA.jpeg" alt="Cámara Afro">
+                </div>
+            </div>
+        </section>
+    </div>
+
+</main>
+
+<script src="js/script.js"></script>
 </body>
 </html>
