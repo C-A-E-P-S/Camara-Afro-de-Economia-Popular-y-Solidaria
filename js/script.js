@@ -1,30 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const navLinks = document.querySelectorAll('.nav-links a[data-tab]');
+    const navLinks = document.querySelectorAll('a[data-tab]');
     const actionButtons = document.querySelectorAll('button[data-tab]');
 
     const showTab = (tabId, anchorId) => {
         document.querySelectorAll('.tab-panel').forEach((panel) => {
             panel.classList.toggle('active', panel.id === tabId);
         });
-
         document.querySelectorAll('.nav-links a').forEach((a) => {
             a.classList.remove('active');
         });
-
-        navLinks.forEach((a) => {
-            if (a.dataset.tab === tabId && a.dataset.anchor === anchorId) {
-                a.classList.add('active');
-            }
+        document.querySelectorAll(`.nav-links a[data-tab="${tabId}"]`).forEach((a) => {
+            if (!a.dataset.anchor) a.classList.add('active');
         });
-
         window.scrollTo({ top: 0, behavior: 'smooth' });
-
         if (anchorId) {
             setTimeout(() => {
                 const target = document.getElementById(anchorId);
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
             }, 100);
         }
     };
