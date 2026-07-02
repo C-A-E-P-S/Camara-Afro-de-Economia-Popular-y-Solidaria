@@ -427,7 +427,7 @@ section {
 
 /* ¿DE DÓNDE VENIMOS Y QUÉ NOS DIFERENCIA? */
 .origen-section {
-    background-color: #f7f7f5;
+    background-color: #ffffff;
     padding: 50px 40px;
 }
 
@@ -620,7 +620,7 @@ section {
 
 /* ACTUALIDAD (movida a Historia) */
 .actualidad-historia {
-    background-color: #f7f7f5;
+    background-color: #ffffff;
     padding: 56px 40px;
 }
 
@@ -725,7 +725,7 @@ section {
 
 /* CONÓCENOS MÁS / MISIÓN Y VISIÓN (estilo tarjeta) */
 .conocenos-section {
-    background-color: #f7f7f5;
+    background-color: #ffffff;
     padding: 70px 40px;
 }
 
