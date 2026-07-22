@@ -1007,35 +1007,35 @@ section {
 }
 
 .servicio-card-1 {
-    background-color: #e0a526;
+    background-color: #5c3317;
 }
 
 .servicio-card-1 .servicio-btn {
-    color: #8a5d00;
+    color: #5c3317;
 }
 
 .servicio-card-2 {
-    background-color: #1a1a4d;
+    background-color: #2E7D32;
 }
 
 .servicio-card-2 .servicio-btn {
-    color: #1a1a4d;
+    color: #2E7D32;
 }
 
 .servicio-card-3 {
-    background-color: #1a73e8;
+    background-color: #8B4513;
 }
 
 .servicio-card-3 .servicio-btn {
-    color: #1a73e8;
+    color: #8B4513;
 }
 
 .servicio-card-4 {
-    background-color: #4a5fc7;
+    background-color: #D4A017;
 }
 
 .servicio-card-4 .servicio-btn {
-    color: #4a5fc7;
+    color: #D4A017;
 }
 
 @media (max-width: 1024px) {
