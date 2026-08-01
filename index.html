@@ -18,13 +18,13 @@
     </div>
     <div class="nav-links">
         <a class="active" data-tab="tab-inicio">Inicio</a>
-        <a data-tab="tab-historia">Historia</a>
         <a data-tab="tab-mision">Misión y Visión</a>
-        <a data-tab="tab-servicios">Servicios</a>
-        <a data-tab="tab-galeria">Galería</a>
-        <a data-tab="tab-faq">Preguntas Frecuentes</a>
-        <a data-tab="tab-unete">Únete</a>
+        <a data-tab="tab-historia">Historia</a>
         <a data-tab="tab-trayectoria">Trayectoria</a>
+        <a data-tab="tab-servicios">Servicios</a>
+        <a data-tab="tab-resena">Reseñas</a>
+        <a data-tab="tab-unete">Únete</a>
+        <a data-tab="tab-faq">Preguntas Frecuentes</a>
     </div>
 </nav>
 
@@ -183,22 +183,18 @@
                     <div class="servicio-card servicio-card-1">
                         <h3>Asesoramiento a emprendedores</h3>
                         <p>Brindamos asesoramiento especializado a emprendedores afroecuatorianos en la planificación, organización y fortalecimiento de sus iniciativas productivas. Nuestro objetivo es contribuir al crecimiento sostenible de los negocios y mejorar su capacidad de gestión dentro del mercado.</p>
-                        <button class="servicio-btn">Descubre más</button>
                     </div>
                     <div class="servicio-card servicio-card-2">
                         <h3>Capacitaciones y Talleres</h3>
                         <p>Desarrollamos programas de formación orientados al fortalecimiento de conocimientos y habilidades en áreas como liderazgo, administración, educación financiera, comercialización e innovación. Estas capacitaciones buscan impulsar el desarrollo personal y empresarial de los participantes.</p>
-                        <button class="servicio-btn">Descubre más</button>
                     </div>
                     <div class="servicio-card servicio-card-3">
                         <h3>Vinculación Comercial</h3>
                         <p>Promovemos espacios de conexión entre emprendedores, organizaciones, instituciones y potenciales clientes. A través de estas acciones buscamos ampliar oportunidades de comercialización y fortalecer la presencia de los emprendimientos en diferentes mercados.</p>
-                        <button class="servicio-btn">Descubre más</button>
                     </div>
                     <div class="servicio-card servicio-card-4">
                         <h3>Gestión de Alianzas Estratégicas</h3>
                         <p>Impulsamos la creación de alianzas con entidades públicas, privadas y académicas que contribuyan al fortalecimiento de los emprendimientos y organizaciones afroecuatorianas. Estas colaboraciones permiten acceder a recursos, conocimientos y nuevas oportunidades de desarrollo.</p>
-                        <button class="servicio-btn">Descubre más</button>
                     </div>
                 </div>
             </div>
@@ -236,23 +232,392 @@
 
     </div>
 
-    <!-- ═══════════════════════════════════ GALERÍA ═══════════════════════════════════ -->
-    <div id="tab-galeria" class="tab-panel">
+    <!-- ═══════════════════════════════════ RESEÑAS ═══════════════════════════════════ -->
+    <div id="tab-resena" class="tab-panel">
 
-        <div class="galeria-banner">
-            <h2>Galería</h2>
+    <!-- ============================================================
+         Sección: "Lo que dicen nuestros miembros y aliados"
+         Cámara de Economía Popular y Solidaria — Versión mejorada
+         ============================================================ -->
+    <section class="cepr">
+      <style>
+        .cepr {
+          --cepr-ink: #3B2A1D;
+          --cepr-ink-soft: #6B5A47;
+          --cepr-cream: #F4EEE1;
+          --cepr-paper: #FBF8F1;
+          --cepr-cafe: #8C5A34;
+          --cepr-cafe-deep: #5A3A22;
+          --cepr-palma: #4B6B3A;
+          --cepr-salvia: #6F8A52;
+          --cepr-gold: #B98A3E;
+
+          font-family: 'Karla', -apple-system, BlinkMacSystemFont, sans-serif;
+          background: var(--cepr-cream);
+          color: var(--cepr-ink);
+          padding: 100px 24px 108px;
+          position: relative;
+          overflow: hidden;
+        }
+        .cepr * { box-sizing: border-box; }
+
+        /* ---------- Textura y manchas de fondo ---------- */
+        .cepr::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background-image: radial-gradient(rgba(59,42,29,0.06) 1px, transparent 1px);
+          background-size: 20px 20px;
+          opacity: 0.5;
+          pointer-events: none;
+        }
+        .cepr::after {
+          content: "";
+          position: absolute;
+          top: -140px; right: -120px;
+          width: 460px; height: 460px;
+          background: radial-gradient(circle, rgba(75,107,58,0.16), transparent 70%);
+          filter: blur(10px);
+          pointer-events: none;
+        }
+        .cepr-blob2 {
+          position: absolute;
+          bottom: -160px; left: -140px;
+          width: 420px; height: 420px;
+          background: radial-gradient(circle, rgba(140,90,52,0.14), transparent 70%);
+          filter: blur(10px);
+          pointer-events: none;
+        }
+
+        .cepr-wrap {
+          max-width: 1180px;
+          margin: 0 auto;
+          position: relative;
+          z-index: 1;
+        }
+
+        /* ---------- Encabezado ---------- */
+        .cepr-head {
+          max-width: 660px;
+          margin: 0 auto 20px;
+          text-align: center;
+        }
+        .cepr-eyebrow {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          font-family: 'Karla', sans-serif;
+          font-weight: 700;
+          font-size: 12px;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          color: var(--cepr-cafe);
+          margin-bottom: 20px;
+        }
+        .cepr-eyebrow::before, .cepr-eyebrow::after {
+          content: "";
+          width: 22px; height: 1px;
+          background: var(--cepr-cafe);
+          opacity: 0.5;
+        }
+        .cepr-title {
+          font-family: 'Fraunces', Georgia, serif;
+          font-weight: 600;
+          font-size: clamp(32px, 4.2vw, 48px);
+          line-height: 1.14;
+          letter-spacing: -0.01em;
+          margin: 0 0 20px;
+        }
+        .cepr-desc {
+          font-size: 16.5px;
+          line-height: 1.7;
+          color: var(--cepr-ink-soft);
+          margin: 0 0 52px;
+        }
+
+        /* ---------- Bento grid ---------- */
+        .cepr-grid {
+          display: grid;
+          grid-template-columns: 1.35fr 1fr 1fr;
+          grid-template-rows: auto auto;
+          gap: 22px;
+        }
+        .cepr-card.featured { grid-column: 1; grid-row: 1 / 3; }
+        .cepr-card.c2 { grid-column: 2; grid-row: 1; }
+        .cepr-card.c3 { grid-column: 3; grid-row: 1; }
+        .cepr-card.c4 { grid-column: 2 / 4; grid-row: 2; }
+
+        @media (max-width: 900px) {
+          .cepr-grid { grid-template-columns: 1fr 1fr; }
+          .cepr-card.featured { grid-column: 1 / 3; grid-row: auto; }
+          .cepr-card.c2 { grid-column: 1; grid-row: auto; }
+          .cepr-card.c3 { grid-column: 2; grid-row: auto; }
+          .cepr-card.c4 { grid-column: 1 / 3; grid-row: auto; }
+        }
+        @media (max-width: 620px) {
+          .cepr-grid { grid-template-columns: 1fr; }
+          .cepr-card.featured, .cepr-card.c2, .cepr-card.c3, .cepr-card.c4 {
+            grid-column: 1; grid-row: auto;
+          }
+        }
+
+        /* ---------- Tarjeta ---------- */
+        .cepr-card {
+          background: var(--cepr-paper);
+          border: 1px solid rgba(59,42,29,0.08);
+          border-radius: 10px;
+          padding: 32px 30px;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          box-shadow: 0 1px 2px rgba(59,42,29,0.04);
+          transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+        }
+        .cepr-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 26px 44px -22px rgba(59,42,29,0.32);
+          border-color: rgba(59,42,29,0.14);
+        }
+
+        .cepr-card:nth-of-type(4n+1) { --accent: var(--cepr-cafe); }
+        .cepr-card.featured { --accent: var(--cepr-palma); }
+        .cepr-card.c2 { --accent: var(--cepr-cafe); }
+        .cepr-card.c3 { --accent: var(--cepr-salvia); }
+        .cepr-card.c4 { --accent: var(--cepr-cafe-deep); }
+
+        /* marca de cita grande, tipo marca de agua */
+        .cepr-card .cepr-wm {
+          position: absolute;
+          top: 14px;
+          right: 22px;
+          font-family: 'Fraunces', Georgia, serif;
+          font-size: 84px;
+          line-height: 1;
+          color: var(--accent);
+          opacity: 0.08;
+          pointer-events: none;
+          user-select: none;
+        }
+        .cepr-card.featured .cepr-wm { font-size: 130px; top: 6px; right: 24px; }
+
+        /* ---------- Insignia de sector ---------- */
+        .cepr-sector {
+          display: inline-flex;
+          align-items: center;
+          gap: 7px;
+          background: color-mix(in srgb, var(--accent) 12%, transparent);
+          color: var(--accent);
+          border-radius: 100px;
+          padding: 6px 12px 6px 10px;
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 0.02em;
+          width: fit-content;
+          margin-bottom: 20px;
+        }
+        .cepr-sector svg { width: 14px; height: 14px; flex: none; }
+
+        /* ---------- Cita ---------- */
+        .cepr-quote {
+          font-family: 'Fraunces', Georgia, serif;
+          font-style: italic;
+          font-weight: 400;
+          color: #3A2C1B;
+          margin: 0 0 24px;
+          position: relative;
+          flex: 1;
+        }
+        .cepr-card:not(.featured) .cepr-quote { font-size: 16px; line-height: 1.58; }
+        .cepr-card.featured .cepr-quote { font-size: 21px; line-height: 1.55; }
+
+        /* ---------- Persona ---------- */
+        .cepr-person {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+          padding-top: 20px;
+          border-top: 1px solid rgba(59,42,29,0.1);
+          margin-top: auto;
+        }
+        .cepr-avatar {
+          flex: none;
+          width: 46px; height: 46px;
+          border-radius: 50%;
+          display: flex; align-items: center; justify-content: center;
+          background: linear-gradient(155deg, var(--accent), color-mix(in srgb, var(--accent) 55%, #2b1c10));
+          color: var(--cepr-paper);
+          font-family: 'Fraunces', Georgia, serif;
+          font-weight: 600;
+          font-size: 16px;
+          box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent);
+        }
+        .cepr-card.featured .cepr-avatar { width: 54px; height: 54px; font-size: 18px; }
+
+        .cepr-name {
+          font-weight: 700;
+          font-size: 15px;
+          color: var(--cepr-ink);
+          line-height: 1.35;
+        }
+        .cepr-role {
+          font-size: 13px;
+          color: var(--cepr-ink-soft);
+          line-height: 1.45;
+          margin-top: 2px;
+        }
+        .cepr-loc {
+          display: inline-flex;
+          align-items: center;
+          gap: 4px;
+          margin-top: 6px;
+          font-family: 'Karla', sans-serif;
+          font-weight: 700;
+          font-size: 10.5px;
+          letter-spacing: 0.07em;
+          text-transform: uppercase;
+          color: var(--accent);
+        }
+        .cepr-loc svg { width: 10px; height: 10px; flex: none; }
+
+        /* ---------- CTA de cierre ---------- */
+        .cepr-cta {
+          display: flex;
+          justify-content: center;
+          margin-top: 52px;
+        }
+        .cepr-cta a {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          font-family: 'Karla', sans-serif;
+          font-weight: 700;
+          font-size: 14.5px;
+          color: var(--cepr-ink);
+          text-decoration: none;
+          border-bottom: 1.5px solid var(--cepr-gold);
+          padding-bottom: 3px;
+          transition: gap 0.2s ease, color 0.2s ease;
+        }
+        .cepr-cta a:hover { gap: 12px; color: var(--cepr-cafe-deep); }
+        .cepr-cta svg { width: 15px; height: 15px; }
+      </style>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400..700;1,400..600&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+      <div class="cepr-blob2"></div>
+
+      <div class="cepr-wrap">
+
+        <div class="cepr-head">
+          <span class="cepr-eyebrow">Voces de la comunidad</span>
+          <h2 class="cepr-title">Lo que dicen nuestros miembros y aliados</h2>
+          <p class="cepr-desc">
+            En la Cámara Afro de Economía Popular y Solidaria creemos que el crecimiento se
+            construye en comunidad. Estas son algunas experiencias compartidas por
+            emprendedores, representantes de organizaciones y profesionales que han
+            participado en nuestras actividades y procesos de fortalecimiento.
+          </p>
         </div>
 
-        <section class="full-page-section">
-            <div class="galeria-grid">
-                <div class="galeria-item"><img src="images/Imagen_CA.jpeg" alt="Cámara Afro"></div>
-                <div class="galeria-item"><img src="images/Imagen2_CA.jpeg" alt="Cámara Afro"></div>
-                <div class="galeria-item"><img src="images/Imagen3_CA.jpeg" alt="Cámara Afro"></div>
-                <div class="galeria-item"><img src="images/Imagen4_CA.jpeg" alt="Cámara Afro"></div>
-                <div class="galeria-item"><img src="images/Imagen5_CA.jpeg" alt="Cámara Afro"></div>
-                <div class="galeria-item"><img src="images/ImagenH_CA.jpeg" alt="Cámara Afro"></div>
+        <div class="cepr-grid">
+
+          <!-- Destacado: Ana Lucía -->
+          <article class="cepr-card featured">
+            <span class="cepr-wm">&ldquo;</span>
+            <span class="cepr-sector">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              Liderazgo y emprendimiento
+            </span>
+            <p class="cepr-quote">"Lo que más valoro es la calidad humana del equipo y el interés genuino por fortalecer a las organizaciones de la Economía Popular y Solidaria. Cada actividad aporta conocimientos útiles y genera espacios para compartir experiencias con otros emprendedores. Sin duda, pertenecer a esta red ha sido una decisión muy positiva."</p>
+            <div class="cepr-person">
+              <div class="cepr-avatar">AL</div>
+              <div>
+                <div class="cepr-name">Ana Lucía Quiñónez Arroyo</div>
+                <div class="cepr-role">Presidenta — Asociación Mujeres Emprendedoras del Pacífico</div>
+                <div class="cepr-loc">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 21s-7-6.5-7-11.5A7 7 0 0 1 19 9.5C19 14.5 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+                  Guayaquil, Ecuador
+                </div>
+              </div>
             </div>
-        </section>
+          </article>
+
+          <!-- María Fernanda -->
+          <article class="cepr-card c2">
+            <span class="cepr-wm">&ldquo;</span>
+            <span class="cepr-sector">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 0 1 4 13H2a10 10 0 0 0 10 10z"/><path d="M11 20a7 7 0 0 0 7-7h2a10 10 0 0 1-10 10z"/><path d="M11 20V4a8 8 0 0 1 8 8"/><path d="M4 13a8 8 0 0 1 8-9"/></svg>
+              Producción agroecológica
+            </span>
+            <p class="cepr-quote">"Ser parte de la Cámara ha significado abrir nuevas oportunidades para nuestra asociación. Las capacitaciones nos permitieron mejorar nuestra organización interna y conocer herramientas que hoy aplicamos en nuestro trabajo diario."</p>
+            <div class="cepr-person">
+              <div class="cepr-avatar">MF</div>
+              <div>
+                <div class="cepr-name">María Fernanda Cedeño Zambrano</div>
+                <div class="cepr-role">Rep. Legal — Asoc. Agroproductiva Nueva Esperanza</div>
+                <div class="cepr-loc">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 21s-7-6.5-7-11.5A7 7 0 0 1 19 9.5C19 14.5 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+                  Esmeraldas
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Carlos Eduardo -->
+          <article class="cepr-card c3">
+            <span class="cepr-wm">&ldquo;</span>
+            <span class="cepr-sector">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 0 1 4 13H2a10 10 0 0 0 10 10z"/><path d="M11 20a7 7 0 0 0 7-7h2a10 10 0 0 1-10 10z"/><path d="M11 20V4a8 8 0 0 1 8 8"/><path d="M4 13a8 8 0 0 1 8-9"/></svg>
+              Emprendimiento agroecológico
+            </span>
+            <p class="cepr-quote">"Encontré en la Cámara un espacio donde realmente escuchan las necesidades de los emprendedores y entendí mejor cómo proyectar mi negocio hacia nuevos mercados."</p>
+            <div class="cepr-person">
+              <div class="cepr-avatar">CE</div>
+              <div>
+                <div class="cepr-name">Carlos Eduardo Mina Angulo</div>
+                <div class="cepr-role">Emprendedor — Mina Verde</div>
+                <div class="cepr-loc">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 21s-7-6.5-7-11.5A7 7 0 0 1 19 9.5C19 14.5 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+                  Santo Domingo
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- José Manuel -->
+          <article class="cepr-card c4">
+            <span class="cepr-wm">&ldquo;</span>
+            <span class="cepr-sector">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-6h6v6"/></svg>
+              Economía cooperativa
+            </span>
+            <p class="cepr-quote">"La Cámara nos ha permitido acceder a información actualizada, procesos de capacitación y oportunidades de articulación con otras organizaciones. Se nota el esfuerzo por promover el desarrollo sostenible de la Economía Popular y Solidaria."</p>
+            <div class="cepr-person">
+              <div class="cepr-avatar">JM</div>
+              <div>
+                <div class="cepr-name">José Manuel Caicedo Hurtado</div>
+                <div class="cepr-role">Administrador — Cooperativa Comunitaria Raíces del Futuro</div>
+                <div class="cepr-loc">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 21s-7-6.5-7-11.5A7 7 0 0 1 19 9.5C19 14.5 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+                  Quito
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="cepr-cta">
+          <a href="#">
+            Conoce más historias de nuestra red
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
 
     </div>
 
@@ -301,15 +666,6 @@
                     </button>
                     <div class="faq-answer">
                         <p>A través de talleres y webinars sobre las obligaciones ante la Superintendencia de Economía Popular y Solidaria, para que las organizaciones mantengan su personería jurídica y conozcan los beneficios legales del modelo asociativo.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" type="button">
-                        <span>¿Qué es "Quito Conecta+" y cómo participo?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Es una feria inclusiva organizada junto a ConQuito para acercar la contratación pública a la Economía Popular y Solidaria. La Cámara articula la participación de productores afrodescendientes con empresas públicas de la ciudad.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -486,13 +842,13 @@
             <h4>Navegación</h4>
             <ul>
                 <li><a data-tab="tab-inicio">Inicio</a></li>
-                <li><a data-tab="tab-historia">Historia</a></li>
                 <li><a data-tab="tab-mision">Misión y Visión</a></li>
-                <li><a data-tab="tab-servicios">Servicios</a></li>
-                <li><a data-tab="tab-galeria">Galería</a></li>
-                <li><a data-tab="tab-faq">Preguntas Frecuentes</a></li>
-                <li><a data-tab="tab-unete">Únete</a></li>
+                <li><a data-tab="tab-historia">Historia</a></li>
                 <li><a data-tab="tab-trayectoria">Trayectoria</a></li>
+                <li><a data-tab="tab-servicios">Servicios</a></li>
+                <li><a data-tab="tab-resena">Reseñas</a></li>
+                <li><a data-tab="tab-unete">Únete</a></li>
+                <li><a data-tab="tab-faq">Preguntas Frecuentes</a></li>
             </ul>
         </div>
         <div class="footer-col">
